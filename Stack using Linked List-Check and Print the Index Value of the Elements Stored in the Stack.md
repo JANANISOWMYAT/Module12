@@ -1,54 +1,52 @@
+# 📚 Stack using Linked List: Check and Print the Index Value of the Elements Stored in the Stack
 
-# 📚 Stack using Linked List: Stack Implementation (Top Element Display)
+This Python program demonstrates how to:
+1. Create a stack using a list.
+2. Add elements to the stack.
+3. Print the index and corresponding value of each element in the stack.
 
 ## 🎯 Aim
 
-To write a Python program that implements a **stack**.  
-The program allows inserting 3 elements from the user and then prints the **top element** of the stack.
-
----
+To write a Python program that:
+- Creates a stack using a list.
+- Adds elements to the stack.
+- Prints the index values of the stack elements along with the corresponding values.
 
 ## 🧠 Algorithm
 
-1. **Start the program.**
-2. **Initialize** an empty list called `stack` to simulate the stack.
-3. **Repeat 3 times**:
-   - Prompt the user to **input a value**.
-   - Use `stack.append(value)` to **push** the value onto the stack.
-4. After inserting 3 elements:
-   - Access the **top element** using `stack[-1]`.
-5. **Print** the top element.
-6. **End the program.**
+1. **Create an Empty Stack**:
+   - Initialize an empty list `stack` to store elements.
 
----
+2. **Add Elements to the Stack**:
+   - Append elements (e.g., 'a', 'b', 'c') to the stack using the `append()` method.
 
-## 💻 Program
+3. **Print the Initial Stack**:
+   - Print the contents of the stack with a message "Initial stack: ".
+
+4. **Iterate through the Stack**:
+   - Use a `for` loop with `range()` to iterate through the stack.
+   - Print the index value and corresponding element at that index.
+
+5. **Print Index and Value**:
+   - For each element in the stack, print the index and the value at that index.
+
+## 📝 Program
 ```
 stack = []
 
-# Add 4 elements to the stack
 stack.append('a')
 stack.append('b')
 stack.append('c')
-stack.append('d')
 
 print('Initial stack: ' + str(stack))
 
-# Print the top element
-top = stack[-1]
-print("\nElement at the top of the stack is .... ", top)
-
-# Remove an element from the stack
-stack.pop()
-
-# Print the top element after popping
-top = stack[-1]
-print("\nAfter removing an element from the stack.")
-print("\nElement at the top of the stack is .... ", top)
+for i in range(len(stack)):
+    print(i, end=" ")
+    print(stack[i])
 ```
 
-## Output
-![image](https://github.com/user-attachments/assets/8434a478-581b-4169-86db-409e56830ba5)
+## Sample Input & Output
+<img width="686" height="166" alt="489275427-d5f9d6e8-11e1-4b9d-aa45-35d3f0e20603" src="https://github.com/user-attachments/assets/d0bf636b-4b8a-494d-9d04-3a7c1bbd80ab" />
 
 ## Result
-    Thus the program allows inserting 3 elements from the user and then prints the **top element** of the stack was successfully executed.
+Thus the output is verified.
